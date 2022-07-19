@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
+import Header from './Header';
 import GlobalStyle from './GlobalStyle';
 import theme from './theme';
 
@@ -9,7 +10,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
-        <h1>Reddit Timer</h1>
+        <Header />
         <Normalize />
         <GlobalStyle />
         <Routes>
